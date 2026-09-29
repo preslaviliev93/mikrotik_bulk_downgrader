@@ -1,0 +1,23 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+venv/
+.venv/
+
+# Ignore secrets and local configs:
+.env
+.env.*
+config.yaml
+
+
+# Ignore Logs
+*.log
+logs/
+
+# Ignore wireshark captures
+*.pcap
+*.pcapng
+
+
+# Ignore RouterOS packages
+*.npk
