@@ -1,5 +1,6 @@
 import socket
 import time
+
 import utils
 
 MNDP_PORT = 5678 # MikroTik Neighbor Discovery Protocol port
