@@ -61,21 +61,21 @@ def parse_packet(data: bytes) -> dict:
 
 
 
-def format_neighbor(decoded_data: dict) -> str:
-    LABELS = {
-    "identity": "Identity",
-    "mac": "MAC Address",
-    "ipv4": "IPv4 Address",
-    "board": "Board",
-    "version": "Version",
-    "uptime": "Uptime",
-}
+# def format_neighbor(decoded_data: dict) -> str:
+#     LABELS = {
+#     "identity": "Identity",
+#     "mac": "MAC Address",
+#     "ipv4": "IPv4 Address",
+#     "board": "Board",
+#     "version": "Version",
+#     "uptime": "Uptime",
+# }
     
-    lines = []
-    for key, label in LABELS.items():
-        value = decoded_data.get(key, "-")
-        lines.append(f"{label:<13}: {value}")
-    return "\n".join(lines)
+#     lines = []
+#     for key, label in LABELS.items():
+#         value = decoded_data.get(key, "-")
+#         lines.append(f"{label:<13}: {value}")
+#     return "\n".join(lines)
 
 
 def format_seconds_to_human_readable(seconds: int) -> str:
